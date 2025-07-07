@@ -11,201 +11,200 @@
 
   <!-- Custom Styles -->
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fefefe;
-      color: #333;
-    }
+   body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4faff;
+  color: #2c3e50;
+}
 
-    /* Navbar */
-    .navbar {
-      background: linear-gradient(90deg, #ff6f61, #ff8e53);
-    }
+.navbar {
+  background: linear-gradient(90deg, #00b4db, #0083b0);
+}
 
-    .navbar-dark .navbar-brand,
-    .navbar-dark .nav-link {
-      color: white !important;
-      font-weight: bold;
-    }
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+  color: white !important;
+  font-weight: bold;
+}
 
-    /* Hero Section */
-    .hero {
-      background: linear-gradient(135deg, #ff6f61, #ff8e53);
-      padding: 120px 0;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-      color: white;
-    }
+.hero {
+  background: linear-gradient(135deg, #00b4db, #0083b0);
+  padding: 120px 0;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
 
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.1);
-      z-index: -1;
-    }
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  z-index: -1;
+}
 
-    #profilePhoto {
-      width: 180px;
-      height: 240px;
-      object-fit: cover;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-      border: 3px solid #fff;
-    }
+#profilePhoto {
+  width: 180px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border: 4px solid white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    #profilePhoto:hover {
-      transform: scale(1.05);
-      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
-    }
+#profilePhoto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
 
-    h2 {
-      font-size: 2.2rem;
-      font-weight: bold;
-      color: #ff6f61;
-      background: linear-gradient(to right, #ffe6e6, #fff6f6);
-      padding: 15px 25px;
-      border-radius: 12px;
-      border: 2px solid #ffc2c2;
-      display: inline-block;
-      margin-bottom: 40px;
-      position: relative;
-      box-shadow: 0 4px 15px rgba(255, 111, 97, 0.2);
-      transition: all 0.3s ease-in-out;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
+h2 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #00b4db, #0083b0);
+  color: white;
+  padding: 14px 30px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 20px rgba(0, 132, 176, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  transition: all 0.3s ease-in-out;
+}
 
-    h2:hover {
-      transform: scale(1.02);
-      box-shadow: 0 6px 20px rgba(255, 111, 97, 0.3);
-    }
+h2:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 132, 176, 0.4);
+}
 
-    section {
-      scroll-margin-top: 80px;
-      padding: 60px 0;
-      background-color: #ffffff;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-      border-radius: 15px;
-      margin: 20px auto;
-      max-width: 1200px;
-    }
+section {
+  scroll-margin-top: 80px;
+  padding: 60px 0;
+  background: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  margin: 25px auto;
+  max-width: 1200px;
+}
 
-    .btn-info {
-      background-color: #ff6f61;
-      border: none;
-      padding: 12px 24px;
-      font-size: 1rem;
-      border-radius: 30px;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
+.btn-info {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  border-radius: 35px;
+  transition: all 0.3s ease;
+  color: white;
+}
 
-    .btn-info:hover {
-      background-color: #e6514d;
-      transform: scale(1.05);
-    }
+.btn-info:hover {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 114, 255, 0.4);
+}
 
-    .card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border: none;
-      border-radius: 15px;
-      overflow: hidden;
-    }
+.card {
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #f9fcff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    }
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
 
-    .card-img-top {
-      height: 200px;
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    }
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
-    .skills img {
-      transition: transform 0.3s ease;
-    }
+.skills img {
+  transition: transform 0.3s ease;
+}
 
-    .skills img:hover {
-      transform: scale(1.1);
-    }
+.skills img:hover {
+  transform: scale(1.12);
+}
 
-    .contact-icon {
-      transition: transform 0.3s ease;
-    }
+.contact-icon {
+  transition: transform 0.3s ease;
+}
 
-    .contact-icon:hover {
-      transform: rotate(10deg);
-    }
+.contact-icon:hover {
+  transform: rotate(10deg) scale(1.1);
+}
 
-    .popup-backdrop {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      backdrop-filter: blur(4px);
-      z-index: 9999;
-      justify-content: center;
-      align-items: center;
-    }
+.popup-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
 
-    .popup-box {
-      background: white;
-      padding: 20px;
-      border-radius: 15px;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-      max-width: 400px;
-      animation: fadeIn 0.3s ease-in-out;
-    }
+.popup-box {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  max-width: 450px;
+  animation: fadeIn 0.4s ease-in-out;
+}
 
-    .popup-box img {
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-    }
+.popup-box img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(-10px);
-      }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
 
-    /* Responsive Fixes */
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
+  .card-img-top {
+    height: 160px;
+  }
 
-      .card-img-top {
-        height: 150px;
-      }
+  .btn-info {
+    width: 100%;
+    border-radius: 35px;
+  }
 
-      .btn-info {
-        width: 100%;
-        border-radius: 30px;
-      }
+  h2 {
+    font-size: 1.6rem;
+  }
+}
 
-      h2 {
-        font-size: 1.5rem;
-      }
-    }
+
   </style>
 </head>
 
@@ -269,7 +268,7 @@
     <div class="container text-center">
       <h2 class="text-center">🎓 Education</h2>
       <p><strong>B.Tech in Computer Science and Engineering</strong><br>D Y Patil Agriculture and Technical University
-        Talsande<br>2021 - 2025<br>Percentage: 73.5%</p>
+        Talsande<br>2021 - 2025<br>Percentage: 91.5%</p>
       <p><strong>HSC</strong><br>Datttajirao Kadam Arts, Science And Commerce College Ichalkaranji<br>Passed:
         2021<br>Percentage: 79.83%</p>
       <p><strong>SSC</strong><br>Sajani Highschool Sajani<br>Passed: 2019<br>Percentage: 80.80%</p>
@@ -313,7 +312,7 @@
       <div class="row">
         <div class="col-md-4 mb-4">
           <div class="card shadow-sm">
-            <img src="images/FirmWebsite.png" class="card-img-top" alt="Project 1">
+            <img src="images/Firm.png" class="card-img-top" alt="Project 1">
             <div class="card-body">
               <h5>Responsive Firm Website</h5>
               <p class="card-text">- Created a fully functional, responsive website for a local firm with user
@@ -325,7 +324,7 @@
         </div>
         <div class="col-md-4 mb-4">
           <div class="card shadow-sm">
-            <img src="images/storeRating.jpg" class="card-img-top" alt="Project 2">
+            <img src="images/storeRating.png" class="card-img-top" alt="Project 2">
             <div class="card-body">
               <h5>Store Rating System</h5>
               <p class="card-text">A web application that enables users to submit and manage ratings for stores
@@ -336,14 +335,10 @@
         </div>
         <div class="col-md-4 mb-4">
           <div class="card shadow-sm">
-            <img src="images/canteenEase.png" class="card-img-top" alt="Project 3">
+            <img src="images/LMS.jpg" class="card-img-top" alt="Project 3">
             <div class="card-body">
-              <h5>CanteenEase</h5>
-              <p class="card-text">- The ” CanteenEase” website is designed to streamline and enhance the operational
-                efficiency of canteens within various institutions.
-                <br>- The system enables users (students, faculty, and staff) to efficiently book tables in the canteen
-                through an online platform, reducing queues, minimizing waiting times, and providing convenient way to
-                manage food orders and payments.
+              <h5>Library Management System (LMS)</h5>
+              <p class="card-text">- Developed a fully functional Library Management System to streamline the process of managing books, users, and transactions in a library. The system allows librarians and students to perform operations such as adding/removing books, issuing/returning books, and searching for available books online.
                 [<a href="#" target="_blank">GitHub</a>]</p>
             </div>
           </div>
