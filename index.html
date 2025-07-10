@@ -11,200 +11,199 @@
 
   <!-- Custom Styles -->
   <style>
-   body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4faff;
-  color: #2c3e50;
-}
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4faff;
+      color: #2c3e50;
+    }
 
-.navbar {
-  background: linear-gradient(90deg, #00b4db, #0083b0);
-}
+    .navbar {
+      background: linear-gradient(90deg, #00b4db, #0083b0);
+    }
 
-.navbar-dark .navbar-brand,
-.navbar-dark .nav-link {
-  color: white !important;
-  font-weight: bold;
-}
+    .navbar-dark .navbar-brand,
+    .navbar-dark .nav-link {
+      color: white !important;
+      font-weight: bold;
+    }
 
-.hero {
-  background: linear-gradient(135deg, #00b4db, #0083b0);
-  padding: 120px 0;
-  text-align: center;
-  color: white;
-  position: relative;
-  z-index: 1;
-}
+    .hero {
+      background: linear-gradient(135deg, #00b4db, #0083b0);
+      padding: 120px 0;
+      text-align: center;
+      color: white;
+      position: relative;
+      z-index: 1;
+    }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.05);
-  z-index: -1;
-}
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      z-index: -1;
+    }
 
-#profilePhoto {
-  width: 180px;
-  height: 240px;
-  object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-  border: 4px solid white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    #profilePhoto {
+      width: 180px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      border: 4px solid white;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-#profilePhoto:hover {
-  transform: scale(1.05);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-}
+    #profilePhoto:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    }
 
-h2 {
-  font-size: 2.3rem;
-  font-weight: bold;
-  background: linear-gradient(to right, #00b4db, #0083b0);
-  color: white;
-  padding: 14px 30px;
-  border-radius: 50px;
-  display: inline-block;
-  margin-bottom: 40px;
-  box-shadow: 0 6px 20px rgba(0, 132, 176, 0.3);
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  transition: all 0.3s ease-in-out;
-}
+    h2 {
+      font-size: 2.3rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #00b4db, #0083b0);
+      color: white;
+      padding: 14px 30px;
+      border-radius: 50px;
+      display: inline-block;
+      margin-bottom: 40px;
+      box-shadow: 0 6px 20px rgba(0, 132, 176, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      transition: all 0.3s ease-in-out;
+    }
 
-h2:hover {
-  transform: scale(1.03);
-  box-shadow: 0 10px 30px rgba(0, 132, 176, 0.4);
-}
+    h2:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 30px rgba(0, 132, 176, 0.4);
+    }
 
-section {
-  scroll-margin-top: 80px;
-  padding: 60px 0;
-  background: white;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
-  border-radius: 16px;
-  margin: 25px auto;
-  max-width: 1200px;
-}
+    section {
+      scroll-margin-top: 80px;
+      padding: 60px 0;
+      background: white;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 16px;
+      margin: 25px auto;
+      max-width: 1200px;
+    }
 
-.btn-info {
-  background: linear-gradient(to right, #00c6ff, #0072ff);
-  border: none;
-  padding: 12px 30px;
-  font-size: 1rem;
-  border-radius: 35px;
-  transition: all 0.3s ease;
-  color: white;
-}
+    .btn-info {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      border: none;
+      padding: 12px 30px;
+      font-size: 1rem;
+      border-radius: 35px;
+      transition: all 0.3s ease;
+      color: white;
+    }
 
-.btn-info:hover {
-  background: linear-gradient(to right, #0072ff, #00c6ff);
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 114, 255, 0.4);
-}
+    .btn-info:hover {
+      background: linear-gradient(to right, #0072ff, #00c6ff);
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 114, 255, 0.4);
+    }
 
-.card {
-  transition: all 0.3s ease;
-  border: none;
-  border-radius: 16px;
-  overflow: hidden;
-  background-color: #f9fcff;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-}
+    .card {
+      transition: all 0.3s ease;
+      border: none;
+      border-radius: 16px;
+      overflow: hidden;
+      background-color: #f9fcff;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
-}
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
 
-.card-img-top {
-  height: 200px;
-  object-fit: cover;
-  border-radius: 16px 16px 0 0;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 16px 16px 0 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-.skills img {
-  transition: transform 0.3s ease;
-}
+    .skills img {
+      transition: transform 0.3s ease;
+    }
 
-.skills img:hover {
-  transform: scale(1.12);
-}
+    .skills img:hover {
+      transform: scale(1.12);
+    }
 
-.contact-icon {
-  transition: transform 0.3s ease;
-}
+    .contact-icon {
+      transition: transform 0.3s ease;
+    }
 
-.contact-icon:hover {
-  transform: rotate(10deg) scale(1.1);
-}
+    .contact-icon:hover {
+      transform: rotate(10deg) scale(1.1);
+    }
 
-.popup-backdrop {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(6px);
-  z-index: 9999;
-  justify-content: center;
-  align-items: center;
-}
+    .popup-backdrop {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(6px);
+      z-index: 9999;
+      justify-content: center;
+      align-items: center;
+    }
 
-.popup-box {
-  background: white;
-  padding: 25px;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-  max-width: 450px;
-  animation: fadeIn 0.4s ease-in-out;
-}
+    .popup-box {
+      background: white;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      max-width: 450px;
+      animation: fadeIn 0.4s ease-in-out;
+    }
 
-.popup-box img {
-  width: 100%;
-  border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-}
+    .popup-box img {
+      width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-15px);
+      }
 
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2rem;
-  }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-  .card-img-top {
-    height: 160px;
-  }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
 
-  .btn-info {
-    width: 100%;
-    border-radius: 35px;
-  }
+      .card-img-top {
+        height: 160px;
+      }
 
-  h2 {
-    font-size: 1.6rem;
-  }
-}
+      .btn-info {
+        width: 100%;
+        border-radius: 35px;
+      }
 
-
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
   </style>
 </head>
 
@@ -318,7 +317,8 @@ section {
               <p class="card-text">- Created a fully functional, responsive website for a local firm with user
                 authentication and admin dashboard.
                 <br>- Integrated a database for storing customer and transaction data.
-                [<a href="#" target="_blank">GitHub</a>]</p>
+                [<a href="#" target="_blank">GitHub</a>]
+              </p>
             </div>
           </div>
         </div>
@@ -338,7 +338,23 @@ section {
             <img src="images/LMS.jpg" class="card-img-top" alt="Project 3">
             <div class="card-body">
               <h5>Library Management System (LMS)</h5>
-              <p class="card-text">- Developed a fully functional Library Management System to streamline the process of managing books, users, and transactions in a library. The system allows librarians and students to perform operations such as adding/removing books, issuing/returning books, and searching for available books online.
+              <p class="card-text">- Developed a fully functional Library Management System to streamline the process of
+                managing books, users, and transactions in a library. The system allows librarians and students to
+                perform operations such as adding/removing books, issuing/returning books, and searching for available
+                books online.
+                [<a href="#" target="_blank">GitHub</a>]</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="images/DAB.jpg" class="card-img-top" alt="Project 4">
+            <div class="card-body">
+              <h5>HealthHub – Online Doctor Appointment Booking</h5>
+              <p class="card-text">- Built a full-stack web application with role-based dashboards for Admin, Doctor,
+                and Patient, enabling real-time appointment scheduling
+                and management. Implemented RESTful APIs, MySQL integration, and a responsive UI using React, Bootstrap,
+                and Axios.
                 [<a href="#" target="_blank">GitHub</a>]</p>
             </div>
           </div>
@@ -375,6 +391,16 @@ section {
         <div class="col-md-2 mb-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg "
             width="40" alt="PHP">
           <div>PHP</div>
+        </div>
+        <div class="col-md-2 mb-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="40"
+            alt="Node.js">
+          <div>Node.js</div>
+        </div>
+        <div class="col-md-2 mb-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="40"
+            alt="Express.js" style="background: white; border-radius: 8px; padding: 4px;">
+          <div>Express.js</div>
         </div>
         <div class="col-md-2 mb-4"><img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg " width="40" alt="MySQL">
