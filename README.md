@@ -13,28 +13,6 @@ Welcome to my personal developer portfolio showcasing my projects, skills, and c
 - Bootstrap
 - JavaScript
 
-## 📸 Preview
-
-## 📸 Screenshots
-
-### 🏠 Homepage
-![Homepage](images/Home.png)
-
-### 📂 Internship Section
-![Projects](images/Experience.png)
-
-### 📂 Projects Section
-![Projects](images/projects.png)
-
-### 📂 About Section
-![Projects](images/About.png)
-
-### 🔧 Skills Section
-![Contact](images/Skills.png)
-
-### 📞 Contact Section
-![Contact](images/Contact.png)
-
 
 ## 📬 Contact
 
